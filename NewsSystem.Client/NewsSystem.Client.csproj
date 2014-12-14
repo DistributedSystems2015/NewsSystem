@@ -60,8 +60,11 @@
     <Content Include="app\app.js" />
     <Content Include="app\controllers\newsController.js" />
     <Content Include="app\controllers\newsListController.js" />
+    <Content Include="app\controllers\weatherController.js" />
+    <Content Include="app\services\weatherService.js" />
     <Content Include="app\views\news.html" />
     <Content Include="app\views\newsList.html" />
+    <Content Include="app\views\weather.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
