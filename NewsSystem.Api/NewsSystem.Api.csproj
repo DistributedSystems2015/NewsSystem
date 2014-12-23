@@ -87,6 +87,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Data\CategoryMemoryRepository.cs" />
+    <Compile Include="Data\CategorySocketRepository.cs" />
     <Compile Include="Data\IRepository.cs" />
     <Compile Include="Data\NewsMemoryRepository.cs" />
     <Compile Include="Global.asax.cs">
@@ -95,6 +96,7 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Socket\SocketRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
