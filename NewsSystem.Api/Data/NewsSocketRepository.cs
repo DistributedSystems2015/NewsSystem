@@ -4,29 +4,29 @@
     using NewsSystem.Api.Models;
     using NewsSystem.Api.Socket;
 
-    public class CategorySocketRepository : IRepository<Category>
+    public class NewsSocketRepository: IRepository<News>
     {
-        public Category Get(int id)
+        public News Get(int id)
         {
             var request = new SocketRequest()
             {
-                EntityType = "Category",
+                EntityType = "News",
                 Method = "Get",
                 Params = new Dictionary<string, object>()
             };
             request.Params["id"] = id;
-            return SocketClient.Instance.Send<Category>(request);
+            return SocketClient.Instance.Send<News>(request);
         }
 
-        public IEnumerable<Category> All()
+        public IEnumerable<News> All()
         {
             var request = new SocketRequest()
             {
-                EntityType = "Category",
+                EntityType = "News",
                 Method = "All"
             };
 
-            return SocketClient.Instance.Send<IEnumerable<Category>>(request);
+            return SocketClient.Instance.Send<IEnumerable<News>>(request);
         }
     }
 }

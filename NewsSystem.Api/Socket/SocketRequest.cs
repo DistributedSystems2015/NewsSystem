@@ -1,6 +1,7 @@
 ﻿namespace NewsSystem.Api.Socket
 {
     using System.Collections.Generic;
+    using System.Xml.Serialization;
 
     public class SocketRequest
     {

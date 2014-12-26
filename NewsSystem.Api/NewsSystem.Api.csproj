@@ -90,13 +90,16 @@
     <Compile Include="Data\CategorySocketRepository.cs" />
     <Compile Include="Data\IRepository.cs" />
     <Compile Include="Data\NewsMemoryRepository.cs" />
+    <Compile Include="Data\NewsSocketRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Socket\SocketClient.cs" />
     <Compile Include="Socket\SocketRequest.cs" />
+    <Compile Include="Socket\SocketResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
