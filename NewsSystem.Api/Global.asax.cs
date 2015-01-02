@@ -10,12 +10,12 @@
         {
             UnityConfig.RegisterComponents();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            SocketClient.Instance.Connect();
+            //SocketClient.Instance.Connect();
         }
 
         protected void Application_End()
         {
-            SocketClient.Instance.Disconnect();
+            //SocketClient.Instance.Disconnect();
         }
     }
 }
