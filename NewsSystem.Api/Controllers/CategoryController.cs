@@ -2,11 +2,6 @@
 {
     using NewsSystem.Api.Data;
     using NewsSystem.Api.Models;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Net;
-    using System.Net.Http;
     using System.Web.Http;
 
     public class CategoryController : ApiController
@@ -27,9 +22,7 @@
 
         public IHttpActionResult Get(int id)
         {
-            var category = this.categoryRepository
-                .All()
-                .FirstOrDefault(c => c.Id == id);
+            var category = this.categoryRepository.Get(id);
 
             if (category == null)
             {

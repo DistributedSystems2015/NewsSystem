@@ -17,7 +17,7 @@
             return this.categories.FirstOrDefault(item => item.Id == id);
         }
 
-        public System.Collections.Generic.IEnumerable<Category> All()
+        public IEnumerable<Category> All()
         {
             return this.categories;
         }
