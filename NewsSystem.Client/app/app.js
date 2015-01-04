@@ -3,7 +3,7 @@
     .controller('newsListController', newsListController)
     .controller('weatherController', weatherController)
     .factory('weatherService', weatherService)
-    .config(function($routeProvider) {
+    .config(function ($routeProvider) {
         $routeProvider
             .when('/news', {
                 templateUrl: 'app/views/newsList.html',
@@ -14,4 +14,5 @@
                 controller: 'newsController',
             })
             .otherwise({ redirectTo: '/news' });
-    });
+    })
+    .constant('baseServiceUrl', 'http://localhost:65312/');
