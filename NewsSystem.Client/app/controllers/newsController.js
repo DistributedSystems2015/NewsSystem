@@ -5,9 +5,13 @@
     var currentNewsUrl = baseServiceUrl + 'api/news/'+id;
     $scope.currentNews = {};
 
-    $http.get(currentNewsUrl).then(
-        function (res) {
-            $scope.currentNews = res.data;
-        }
-    )
+    $http.get(currentNewsUrl).then(function (res) {
+        $scope.currentNews = res.data;
+
+        var currentCategoryUrl = baseServiceUrl + 'api/category/' + res.data.CategoryId;
+        $http.get(currentCategoryUrl)
+            .then(function (response) {
+                $scope.currentNews.CategoryName = response.data.Name;
+            });
+    });
 }

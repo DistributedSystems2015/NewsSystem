@@ -15,4 +15,4 @@
             })
             .otherwise({ redirectTo: '/news' });
     })
-    .constant('baseServiceUrl', 'http://localhost:65312/');
+    .constant('baseServiceUrl', 'http://localhost:58953/');
