@@ -12,10 +12,10 @@ namespace NewsSystem.Api
         {
             var container = new UnityContainer();
 
-            container.RegisterType<IRepository<News>, NewsMemoryRepository>();
-            container.RegisterType<IRepository<Category>, CategoryMemoryRepository>();
-            // container.RegisterType<IRepository<News>, NewsSocketRepository>();
-            // container.RegisterType<IRepository<Category>, CategorySocketRepository>();
+            //container.RegisterType<IRepository<News>, NewsMemoryRepository>();
+            //container.RegisterType<IRepository<Category>, CategoryMemoryRepository>();
+            container.RegisterType<IRepository<News>, NewsSocketRepository>();
+            container.RegisterType<IRepository<Category>, CategorySocketRepository>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
